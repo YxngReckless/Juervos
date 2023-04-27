@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Juervos Media - Social Media Company</title>
+</head>
+<body>
+  <header>
+    <h1>Juervos Media</h1>
+    <h2>USA Based Services</h2>
+  </header>
+
+  <section class="intro">
+    <p>At Juervos Media, we help businesses build their online presence and manage their reputation. Our services include website building, hosting, social media management, and reputation management. Let us help you grow your brand and reach your target audience.</p>
+  </section>
+  
+
+  <section class="services">
+    <div class="service">
+      <img src="website-building.jpg" alt="Website Building/Hosting">
+      <h3>Website Building/Hosting</h3>
+      <p><span class="price"></span>Our expert team will build and host your website, ensuring a seamless and professional online presence. Price: $500 initially and $100 per month thereafter (1-year contract required).</p>
+      <button onclick="openModal()">Get Started</button>
+    </div>
+
+    <div class="service">
+      <img src="social-media.jpg" alt="Social Media Management">
+      <h3>Social Media Management</h3>
+      <p>We'll create and manage your social media accounts, ensuring consistent brand messaging and engagement with your audience. Price: $120 initially and $100 per month thereafter (monthly contract).</p>
+      <button onclick="openModal()">Get Started</button>
+    </div>
+
+    <div class="service">
+      <img src="reputation-management.jpg" alt="Social Media Management + Reputation Management">
+      <h3>Social Media Management + Reputation Management</h3>
+      <p>Maximize your brand's online presence with our combined social media and reputation management services. Price: $165 initially and $150 per month thereafter (monthly contract).</p>
+      <button onclick="openModal()">Get Started</button>
+    </div>
+
+    <div class="service">
+      <img src="all-included.jpg" alt="All Included Package">
+      <h3>All Included Package</h3>
+      <p>Get the best of everything with our all-inclusive package. Website building, hosting, social media management, and reputation management, all for an unbeatable value. Price: $650 initially and $200 per month thereafter (1-year contract required).</p>
+      <button onclick="openModal()">Get Started</button>
+    </div>
+  </section>
+  <section class="why-choose-us">
+    <h2>Why Choose Juervos Media</h2>
+    <ul>
+      <li>Expert team with years of experience</li>
+      <li>Customized solutions for your unique needs</li>
+      <li>Proven track record of success</li>
+      <li>Transparent pricing with no hidden fees</li>
+      <li>Responsive and attentive customer support</li>
+    </ul>
+  </section>
+  <section class="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <p>"Juervos Media has been instrumental in growing our online presence. Their expertise and dedication have helped us reach new customers and expand our business."</p>
+      <span>- John Doe, Company A</span>
+    </div>
+    <div class="testimonial">
+      <p>"The team at Juervos Media is responsive, knowledgeable, and truly cares about the success of their clients. We're grateful for their support and guidance."</p>
+      <span>- Jane Smith, Company B</span>
+    </div>
+  </section>
+    <section class="call-to-action">
+    <h2>Ready to Grow Your Online Presence?</h2>
+    <p>Contact us today and let's discuss how we can help your business succeed in the digital world.</p>
+    <button onclick="openModal()">Get Started</button>
+  </section>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe src="https://forms.gle/mRAmkcvjYySxY4Un7" frameborder="0" width="100%" height="90%"></iframe>
+    </div>
+  </div>
+      
+  <footer>
+    <div class="footer-content">
+      <h3>Juervos Media</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>&copy; 2023 Juervos Media. All rights reserved.</p>
+    </footer>
+    <script>
+    function openModal() {
+      document.getElementById("modal").style.display = "block";
+    }
+
+    document.getElementsByClassName("close")[0].onclick = function () {
+      document.getElementById("modal").style.display = "none";
+    };
+
+    window.onclick = function (event) {
+        if (event.target == document.getElementById("modal")) {
+        document.getElementById("modal").style.display = "none";
+      }
+    };
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #e0e0e0;
+}
+
+header {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 2rem 0;
+  
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #4a00e0;
+  font-family: Arial, sans-serif;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.intro {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #4a00e0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #8228fa;
+}
+
+.service {
+  flex: 0 0 calc(25% - 2rem);
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.service h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.service p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.service .price {
+  color: #4a00e0;
+  font-weight: bold;
+}
+
+button {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  height: 70%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+
+/* ... existing styles ... */
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -1rem;
+}
+
+.services .service {
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* ... existing styles ... */
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -1rem;
+}
+
+.services .service {
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* ... existing styles ... */
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  margin-bottom: 1.5rem;
+}
+
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose-us li {
+  margin-bottom: 1rem;
+}
+
+/* New Sections 2*/
+.testimonials {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 1.5rem;
+}
+
+.testimonial {
+  margin-bottom: 2rem;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  padding: 2rem;
+  background-color: #4c63a7;
+  color: #fff;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.call-to-action p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.call-to-action button {
+  background-color: #6f7fd4;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.call-to-action button:hover {
+  background-color: #8d9ef5;
+}
+
+
+/* Footer */
+footer {
+  background-color: #1d2b45;
+  padding: 2rem;
+}
+
+.footer-content {
+  text-align: center;
+  color: #fff;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.footer-content ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+  color: #6f7fd4;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+/* For screens smaller than 850px, display 1 column */
+@media screen and (max-width: 849px) {
+  .services .service {
+    flex: 0 0 calc(100% - 2rem);
+  }
+}
+
+/* For screens between 850px and 1280px, display 2 columns */
+@media screen and (min-width: 850px) and (max-width: 1280px) {
+  .services .service {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+
+/* For screens larger than 1280px, display 4 columns */
+@media screen and (min-width: 1281px) {
+  .services .service {
+    flex: 0 0 calc(25% - 2rem);
+  }
+}
